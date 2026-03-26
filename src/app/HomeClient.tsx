@@ -28,6 +28,17 @@ export default function HomeClient() {
     { title: t.calculators.babyGrowth, href: '/calculators/baby-growth' },
   ]
 
+  const devTools = [
+    { title: t.devTools.jsonFormatter, href: '/dev-tools/json-formatter' },
+    { title: t.devTools.timestampConverter, href: '/dev-tools/timestamp-converter' },
+    { title: t.devTools.base64Encoder, href: '/dev-tools/base64-encoder' },
+    { title: t.devTools.urlEncoder, href: '/dev-tools/url-encoder' },
+    { title: t.devTools.regexTester, href: '/dev-tools/regex-tester' },
+    { title: t.devTools.codeFormatter, href: '/dev-tools/code-formatter' },
+    { title: t.devTools.textDiff, href: '/dev-tools/text-diff' },
+    { title: t.devTools.qrGenerator, href: '/dev-tools/qr-generator' },
+  ]
+
   return (
     <div className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
@@ -76,6 +87,27 @@ export default function HomeClient() {
                     <span className="text-indigo-600 text-lg">📊</span>
                   </div>
                   <h3 className="font-semibold text-gray-800">{item.title}</h3>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+              <span className="text-green-600 font-bold">⚙️</span>
+            </div>
+            <h2 className="text-2xl font-bold text-gray-900">{t.home.devTools}</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-8 gap-4">
+            {devTools.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer text-center">
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mb-3 mx-auto">
+                    <span className="text-green-600 text-lg">🛠️</span>
+                  </div>
+                  <h3 className="font-semibold text-gray-800 text-sm">{item.title}</h3>
                 </Card>
               </Link>
             ))}
