@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  calc-master:
+    build: .
+    container_name: calc-master
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - web-network
+
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/logs:/var/log/nginx
+      - ./nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - calc-master
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    driver: bridge
