@@ -11,7 +11,7 @@ const TIME_ZONES = [
   { value: 'UTC+9', label: '东京 (UTC+9)' },
   { value: 'UTC-5', label: '纽约 (UTC-5)' },
   { value: 'UTC-8', label: '洛杉矶 (UTC-8)' },
-  { value: 'UTC+0', label: '伦敦 (UTC+0)' },
+  { value: 'UTC+1', label: '伦敦 (UTC+0/UTC+1)' },
 ]
 
 export default function TimeConverter() {
@@ -50,7 +50,7 @@ export default function TimeConverter() {
             onChange={(e) => setFromZone(e.target.value)}
           >
             {TIME_ZONES.map((zone) => (
-              <option key={zone.value + Math.random()} value={zone.value}>
+              <option key={zone.value} value={zone.value}>
                 {zone.label}
               </option>
             ))}
@@ -69,7 +69,7 @@ export default function TimeConverter() {
             onChange={(e) => setToZone(e.target.value)}
           >
             {TIME_ZONES.map((zone) => (
-              <option key={zone.value + Math.random()} value={zone.value}>
+              <option key={zone.value} value={zone.value}>
                 {zone.label}
               </option>
             ))}

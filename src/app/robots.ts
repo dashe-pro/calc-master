@@ -1,12 +1,13 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://calcmaster.com'
   return {
     rules: {
       userAgent: '*',
       allow: '/',
       disallow: ['/private/', '/admin/'],
     },
-    sitemap: 'https://calcmaster.com/sitemap.xml',
+    sitemap: `${baseUrl}/sitemap.xml`,
   }
 }

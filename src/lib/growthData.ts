@@ -136,12 +136,14 @@ const findNearestAge = (ageMonths: number, data: GrowthData) => {
   return nearest
 }
 
+export type GrowthLabelKey = 'underweight' | 'under' | 'lowNormal' | 'normal' | 'highNormal' | 'high' | 'veryHigh'
+
 export const getGrowthPercentile = (
   value: number,
   ageMonths: number,
   gender: 'boy' | 'girl',
   type: 'height' | 'weight'
-): { percentile: number; label: string } => {
+): { percentile: number; labelKey: GrowthLabelKey } => {
   let data: GrowthData
   if (type === 'height') {
     data = gender === 'boy' ? BOYS_HEIGHT : GIRLS_HEIGHT
@@ -152,14 +154,14 @@ export const getGrowthPercentile = (
   const nearestAge = findNearestAge(ageMonths, data)
   const percentiles = data[nearestAge]
 
-  if (value <= percentiles.P3) return { percentile: 3, label: '偏矮小' }
-  if (value <= percentiles.P10) return { percentile: 10, label: '偏矮' }
-  if (value <= percentiles.P25) return { percentile: 25, label: '中下' }
-  if (value <= percentiles.P50) return { percentile: 50, label: '正常' }
-  if (value <= percentiles.P75) return { percentile: 75, label: '中上' }
-  if (value <= percentiles.P90) return { percentile: 90, label: '偏高' }
-  if (value <= percentiles.P97) return { percentile: 97, label: '偏高' }
-  return { percentile: 99, label: '超高' }
+  if (value <= percentiles.P3) return { percentile: 3, labelKey: 'underweight' }
+  if (value <= percentiles.P10) return { percentile: 10, labelKey: 'under' }
+  if (value <= percentiles.P25) return { percentile: 25, labelKey: 'lowNormal' }
+  if (value <= percentiles.P50) return { percentile: 50, labelKey: 'normal' }
+  if (value <= percentiles.P75) return { percentile: 75, labelKey: 'highNormal' }
+  if (value <= percentiles.P90) return { percentile: 90, labelKey: 'high' }
+  if (value <= percentiles.P97) return { percentile: 97, labelKey: 'veryHigh' }
+  return { percentile: 99, labelKey: 'veryHigh' }
 }
 
 export const getPercentileRange = (

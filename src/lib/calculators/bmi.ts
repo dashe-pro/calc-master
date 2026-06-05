@@ -1,5 +1,9 @@
-export interface BMICategory {
-  category: string
+import type { BMICategoryResult } from '@/lib/types'
+
+export type BMICategoryKey = 'underweight' | 'normal' | 'overweight' | 'obese'
+
+export interface BMICategoryInfo {
+  key: BMICategoryKey
   color: string
 }
 
@@ -8,9 +12,9 @@ export const calculateBMI = (weight: number, height: number): number => {
   return weight / (heightInMeters * heightInMeters)
 }
 
-export const getBMICategory = (bmi: number): BMICategory => {
-  if (bmi < 18.5) return { category: '偏瘦', color: 'text-blue-500' }
-  if (bmi < 24) return { category: '正常', color: 'text-green-500' }
-  if (bmi < 28) return { category: '偏胖', color: 'text-yellow-500' }
-  return { category: '肥胖', color: 'text-red-500' }
+export const getBMICategory = (bmi: number): BMICategoryInfo => {
+  if (bmi < 18.5) return { key: 'underweight', color: 'text-blue-500' }
+  if (bmi < 24) return { key: 'normal', color: 'text-green-500' }
+  if (bmi < 28) return { key: 'overweight', color: 'text-yellow-500' }
+  return { key: 'obese', color: 'text-red-500' }
 }
