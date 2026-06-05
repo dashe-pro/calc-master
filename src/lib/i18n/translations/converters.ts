@@ -38,6 +38,12 @@ export const converters = {
         title: '时间换算 - CalcMaster',
         description: '免费的时间单位换算器，支持秒、分钟、小时、天等单位转换'
       }
+    },
+    converterUI: {
+      inputPlaceholder: '输入数值',
+      resultPlaceholder: '结果',
+      inputAmount: '输入金额',
+      enterText: '输入文本或URL',
     }
   },
   en: {
@@ -79,6 +85,12 @@ export const converters = {
         title: 'Time Converter - CalcMaster',
         description: 'Free time unit converter supporting seconds, minutes, hours, days and more'
       }
+    },
+    converterUI: {
+      inputPlaceholder: 'Enter value',
+      resultPlaceholder: 'Result',
+      inputAmount: 'Enter amount',
+      enterText: 'Enter text or URL',
     }
   }
 }
