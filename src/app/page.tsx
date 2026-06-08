@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'CalcMaster - 全能在线计算工具',
     description: '免费的在线计算工具，包含单位换算、房贷计算器、BMI计算器等多种实用工具',
-    url: 'https://calcmaster.com',
+    url: 'https://calcmasters.org',
     type: 'website',
   }
 }

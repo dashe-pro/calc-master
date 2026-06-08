@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'BMI计算器 - CalcMaster',
     description: '免费的BMI计算器，测量身体质量指数，判断健康状况',
-    url: 'https://calcmaster.com/calculators/bmi',
+    url: 'https://calcmasters.org/calculators/bmi',
     type: 'website',
   }
 }

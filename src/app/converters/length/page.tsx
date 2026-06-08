@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '长度换算器 - CalcMaster',
     description: '免费的长度单位换算器，支持米、英尺、厘米、英寸等多种单位转换',
-    url: 'https://calcmaster.com/converters/length',
+    url: 'https://calcmasters.org/converters/length',
     type: 'website',
   }
 }

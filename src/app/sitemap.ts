@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://calcmaster.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://calcmasters.org'
 
   const converters = ['length', 'weight', 'temperature', 'area', 'data', 'currency', 'time']
   const calculators = ['mortgage', 'bmi', 'discount', 'tip', 'compound', 'date', 'due-date', 'baby-growth']

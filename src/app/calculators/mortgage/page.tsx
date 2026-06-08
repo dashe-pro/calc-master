@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '房贷计算器 - CalcMaster',
     description: '免费的房贷计算器，支持等额本息和等额本金两种还款方式',
-    url: 'https://calcmaster.com/calculators/mortgage',
+    url: 'https://calcmasters.org/calculators/mortgage',
     type: 'website',
   }
 }
