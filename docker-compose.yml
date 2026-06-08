@@ -7,3 +7,16 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - calc-master
