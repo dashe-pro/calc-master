@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { useI18n } from '@/lib/i18n/context'
 
 export default function Footer() {
@@ -11,6 +12,11 @@ export default function Footer() {
         <div className="text-center text-gray-500 text-sm">
           <p>{t.footer.copyright}</p>
           <p className="mt-2">{t.footer.description}</p>
+          <p className="mt-2">
+            <Link href="/privacy" className="text-blue-600 hover:underline">
+              {t.footer.privacy}
+            </Link>
+          </p>
         </div>
       </div>
     </footer>
