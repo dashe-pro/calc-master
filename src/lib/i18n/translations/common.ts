@@ -18,7 +18,11 @@ export const common = {
       subtitle: '免费、易用的在线计算工具，涵盖单位换算、财务计算、健康计算、开发者工具等多种功能',
       unitConverters: '单位换算工具',
       onlineCalculators: '在线计算器',
-      devTools: '开发者工具'
+      devTools: '开发者工具',
+      searchPlaceholder: '搜索工具... (Ctrl+K)',
+      noResults: '未找到匹配的工具',
+      recentTools: '最近使用',
+      myFavorites: '我的收藏',
     },
     privacy: {
       title: '隐私政策',
@@ -61,7 +65,11 @@ export const common = {
       subtitle: 'Free and easy-to-use online calculator tools covering unit conversion, financial calculation, health calculation, developer tools and more',
       unitConverters: 'Unit Converters',
       onlineCalculators: 'Online Calculators',
-      devTools: 'Developer Tools'
+      devTools: 'Developer Tools',
+      searchPlaceholder: 'Search tools... (Ctrl+K)',
+      noResults: 'No matching tools found',
+      recentTools: 'Recently Used',
+      myFavorites: 'My Favorites',
     },
     privacy: {
       title: 'Privacy Policy',

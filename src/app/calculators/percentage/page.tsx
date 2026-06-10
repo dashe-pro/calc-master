@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import PercentageCalculator from '@/components/calculators/PercentageCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '百分比计算器 - 在线百分比计算 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function PercentagePage() {
-  return <PercentageCalculator />
+  return (
+    <ToolPageWrapper title="百分比计算器">
+      <PercentageCalculator />
+    </ToolPageWrapper>
+  )
 }

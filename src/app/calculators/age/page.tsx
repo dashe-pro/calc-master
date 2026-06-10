@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import AgeCalculator from '@/components/calculators/AgeCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '年龄计算器 - 在线年龄计算 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function AgePage() {
-  return <AgeCalculator />
+  return (
+    <ToolPageWrapper title="年龄计算器">
+      <AgeCalculator />
+    </ToolPageWrapper>
+  )
 }
