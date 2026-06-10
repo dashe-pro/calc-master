@@ -10,6 +10,7 @@ export const calculators = {
       dueDate: '预产期计算器',
       babyGrowth: '宝宝生长百分位',
       percentage: '百分比计算器',
+      age: '年龄计算器',
     },
     calculatorPages: {
       mortgage: {
@@ -47,6 +48,10 @@ export const calculators = {
       percentage: {
         title: '百分比计算器 - CalcMaster',
         description: '免费的在线百分比计算器，支持百分比计算、占比计算和百分比变化计算'
+      },
+      age: {
+        title: '年龄计算器 - CalcMaster',
+        description: '免费的在线年龄计算器，输入出生日期精确计算年龄、生肖和星座'
       }
     },
     bmi: {
@@ -127,6 +132,18 @@ export const calculators = {
       legendUnderOver: '偏矮/偏高 (3-97%)',
       legendExtreme: '偏矮小/超高 (<3% 或 >97%)'
     },
+    age: {
+      title: '年龄计算器',
+      birthDate: '出生日期',
+      age: '年龄',
+      years: '岁',
+      months: '个月',
+      days: '天',
+      totalDays: '总天数',
+      nextBirthday: '下一个生日',
+      daysUntil: '还有',
+      zodiac: '生肖/星座',
+    },
     percentage: {
       title: '百分比计算器',
       modePercentOf: 'X 的 Y% 是多少',
@@ -181,6 +198,7 @@ export const calculators = {
       dueDate: 'Due Date Calculator',
       babyGrowth: 'Baby Growth Percentile',
       percentage: 'Percentage Calculator',
+      age: 'Age Calculator',
     },
     calculatorPages: {
       mortgage: {
@@ -218,6 +236,10 @@ export const calculators = {
       percentage: {
         title: 'Percentage Calculator - CalcMaster',
         description: 'Free online percentage calculator - calculate percentages, proportions and percentage changes'
+      },
+      age: {
+        title: 'Age Calculator - CalcMaster',
+        description: 'Free online age calculator - calculate your exact age, zodiac sign and constellation'
       }
     },
     bmi: {
@@ -297,6 +319,18 @@ export const calculators = {
       legendLowNormal: 'Below/Above Average (10-90%)',
       legendUnderOver: 'Short/Tall (3-97%)',
       legendExtreme: 'Short Stature/Very Tall (<3% or >97%)'
+    },
+    age: {
+      title: 'Age Calculator',
+      birthDate: 'Birth Date',
+      age: 'Age',
+      years: 'years',
+      months: 'months',
+      days: 'days',
+      totalDays: 'Total Days',
+      nextBirthday: 'Next Birthday',
+      daysUntil: 'days left',
+      zodiac: 'Zodiac / Sign',
     },
     percentage: {
       title: 'Percentage Calculator',
