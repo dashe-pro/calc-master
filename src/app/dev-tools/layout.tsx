@@ -1,7 +1,7 @@
 'use client'
 
-import Link from 'next/link'
 import { useI18n } from '@/lib/i18n/context'
+import Link from 'next/link'
 
 const tools = [
   { path: '/dev-tools/json-formatter', nameKey: 'jsonFormatter', emoji: '📋' },
@@ -12,6 +12,8 @@ const tools = [
   { path: '/dev-tools/code-formatter', nameKey: 'codeFormatter', emoji: '💻' },
   { path: '/dev-tools/text-diff', nameKey: 'textDiff', emoji: '📝' },
   { path: '/dev-tools/qr-generator', nameKey: 'qrGenerator', emoji: '📱' },
+  { path: '/dev-tools/password-generator', nameKey: 'passwordGenerator', emoji: '🔑' },
+  { path: '/dev-tools/color-converter', nameKey: 'colorConverter', emoji: '🎨' },
 ]
 
 export default function DevToolsLayout({ children }: { children: React.ReactNode }) {
@@ -21,11 +23,6 @@ export default function DevToolsLayout({ children }: { children: React.ReactNode
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-8 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 mb-4 transition-colors">
-            <span className="text-xl">←</span>
-            <span className="font-medium">{t.devToolUI.backHome}</span>
-          </Link>
-
           <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 mb-6">
             <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.devToolUI.pageTitle}</h1>
             <p className="text-gray-600">{t.devToolUI.pageDescription}</p>

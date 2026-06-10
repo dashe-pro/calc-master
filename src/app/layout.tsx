@@ -17,12 +17,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://calcmasters.org'),
   title: {
     default: "CalcMaster - 全能在线计算工具 | 免费单位换算与计算器",
     template: "%s | CalcMaster"
   },
-  description: "免费的在线计算工具，包含单位换算、房贷计算器、BMI计算器、折扣计算器、复利计算器等多种实用工具，支持中英文切换",
-  keywords: "在线计算器,单位换算,房贷计算器,BMI计算器,折扣计算器,复利计算器,日期计算器,预产期计算器,宝宝生长百分位,免费计算工具",
+  description: "免费的在线计算工具，包含单位换算、房贷计算器、BMI计算器、折扣计算器、复利计算器等多种实用工具，支持中英文切换，提供百分比计算、年龄计算、密码生成、颜色转换等工具",
+  keywords: "在线计算器,单位换算,房贷计算器,BMI计算器,折扣计算器,复利计算器,百分比计算器,年龄计算器,随机数生成器,密码生成器,颜色转换器,免费计算工具",
+  alternates: {
+    languages: {
+      'zh-CN': 'https://calcmasters.org',
+      'en': 'https://calcmasters.org',
+      'x-default': 'https://calcmasters.org',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: 'zh_CN',

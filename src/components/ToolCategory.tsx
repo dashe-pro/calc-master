@@ -34,12 +34,12 @@ export default function ToolCategory({ icon, title, items, colorClass, columns =
       </div>
       <div className={`grid grid-cols-2 md:grid-cols-3 ${columns} gap-4`}>
         {items.map((item) => (
-          <Link key={item.href} href={item.href}>
-            <Card className="p-6 hover:shadow-md transition-shadow cursor-pointer text-center">
-              <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center mb-3 mx-auto`}>
+          <Link key={item.href} href={item.href} className="flex">
+            <Card className="p-4 hover:shadow-md transition-shadow cursor-pointer text-center flex flex-col items-center justify-center w-full min-h-[5rem]">
+              <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center mb-3 mx-auto shrink-0`}>
                 <span className={`${colors.text} text-lg`}>🔄</span>
               </div>
-              <h3 className="font-semibold text-gray-800 text-sm">{item.title}</h3>
+              <h3 className="font-semibold text-gray-800 text-sm leading-tight">{item.title}</h3>
             </Card>
           </Link>
         ))}
