@@ -8,7 +8,9 @@ export const devTools = {
       regexTester: '正则表达式测试',
       codeFormatter: '代码格式化',
       textDiff: '文本对比',
-      qrGenerator: '二维码生成器'
+      qrGenerator: '二维码生成器',
+      passwordGenerator: '密码生成器',
+      colorConverter: '颜色转换器',
     },
     devToolUI: {
       copy: '复制',
@@ -93,6 +95,23 @@ export const devTools = {
       qrDescription: '分享链接、Wi-Fi配置，一键生成二维码',
       inputPlaceholder: '输入数值',
       resultPlaceholder: '结果',
+      passwordLength: '密码长度',
+      passwordLengthLabel: '位',
+      uppercase: '大写字母 (A-Z)',
+      lowercase: '小写字母 (a-z)',
+      numbers: '数字 (0-9)',
+      symbolsOption: '特殊符号 (!@#$)',
+      excludeAmbiguous: '排除易混淆字符 (O0lI1)',
+      refresh: '重新生成',
+      passwordStrength: '密码强度',
+      strengthWeak: '弱',
+      strengthFair: '一般',
+      strengthGood: '好',
+      strengthStrong: '强',
+      colorHex: 'HEX',
+      colorRgb: 'RGB',
+      colorHsl: 'HSL',
+      colorPreview: '颜色预览',
     },
     devToolPages: {
       jsonFormatter: {
@@ -126,6 +145,14 @@ export const devTools = {
       qrGenerator: {
         title: '二维码生成器 - CalcMaster',
         description: '免费的二维码生成器，分享链接、Wi-Fi配置'
+      },
+      passwordGenerator: {
+        title: '密码生成器 - CalcMaster',
+        description: '免费的在线随机密码生成器，支持自定义长度、字符类型，保障账户安全'
+      },
+      colorConverter: {
+        title: '颜色转换器 - CalcMaster',
+        description: '免费的颜色格式转换工具，支持 HEX、RGB、HSL 互转'
       }
     }
   },
@@ -138,7 +165,9 @@ export const devTools = {
       regexTester: 'Regex Tester',
       codeFormatter: 'Code Formatter',
       textDiff: 'Text Diff',
-      qrGenerator: 'QR Code Generator'
+      qrGenerator: 'QR Code Generator',
+      passwordGenerator: 'Password Generator',
+      colorConverter: 'Color Converter',
     },
     devToolUI: {
       copy: 'Copy',
@@ -223,6 +252,23 @@ export const devTools = {
       qrDescription: 'Share links and Wi-Fi configs, generate QR codes instantly',
       inputPlaceholder: 'Enter value',
       resultPlaceholder: 'Result',
+      passwordLength: 'Password Length',
+      passwordLengthLabel: '',
+      uppercase: 'Uppercase (A-Z)',
+      lowercase: 'Lowercase (a-z)',
+      numbers: 'Digits (0-9)',
+      symbolsOption: 'Symbols (!@#$)',
+      excludeAmbiguous: 'Exclude ambiguous (O0lI1)',
+      refresh: 'Regenerate',
+      passwordStrength: 'Strength',
+      strengthWeak: 'Weak',
+      strengthFair: 'Fair',
+      strengthGood: 'Good',
+      strengthStrong: 'Strong',
+      colorHex: 'HEX',
+      colorRgb: 'RGB',
+      colorHsl: 'HSL',
+      colorPreview: 'Preview',
     },
     devToolPages: {
       jsonFormatter: {
@@ -256,6 +302,14 @@ export const devTools = {
       qrGenerator: {
         title: 'QR Code Generator - CalcMaster',
         description: 'Free QR code generator for sharing links and Wi-Fi configuration'
+      },
+      passwordGenerator: {
+        title: 'Password Generator - CalcMaster',
+        description: 'Free online random password generator with customizable length and character types'
+      },
+      colorConverter: {
+        title: 'Color Converter - CalcMaster',
+        description: 'Free color format converter supporting HEX, RGB, and HSL conversion'
       }
     }
   }

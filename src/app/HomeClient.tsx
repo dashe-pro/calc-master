@@ -40,6 +40,8 @@ export default function HomeClient() {
     { title: t.devTools.codeFormatter, href: '/dev-tools/code-formatter' },
     { title: t.devTools.textDiff, href: '/dev-tools/text-diff' },
     { title: t.devTools.qrGenerator, href: '/dev-tools/qr-generator' },
+    { title: t.devTools.passwordGenerator, href: '/dev-tools/password-generator' },
+    { title: t.devTools.colorConverter, href: '/dev-tools/color-converter' },
   ]
 
   return (
