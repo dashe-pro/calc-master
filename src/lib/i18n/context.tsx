@@ -1,7 +1,8 @@
 'use client'
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react'
-import { Language, Translations, translations } from './translations'
+import { type Language, defaultLanguage } from './languages'
+import { translations, type Translations } from './locales'
 
 interface I18nContextType {
   language: Language
@@ -12,18 +13,18 @@ interface I18nContextType {
 const I18nContext = createContext<I18nContextType | undefined>(undefined)
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>('zh')
+  const [language, setLanguage] = useState<Language>(defaultLanguage)
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('language') as Language
-    if (savedLang && (savedLang === 'zh' || savedLang === 'en')) {
-      setLanguage(savedLang)
+    const saved = localStorage.getItem('calc-master:language')
+    if (saved && translations[saved]) {
+      setLanguage(saved as Language)
     }
   }, [])
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang)
-    localStorage.setItem('language', lang)
+    localStorage.setItem('calc-master:language', lang)
   }
 
   return (
@@ -31,7 +32,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
       value={{
         language,
         setLanguage: handleSetLanguage,
-        t: translations[language]
+        t: translations[language] || translations[defaultLanguage],
       }}
     >
       {children}

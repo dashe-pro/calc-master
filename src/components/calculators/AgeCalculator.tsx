@@ -21,11 +21,11 @@ export default function AgeCalculator() {
 
   return (
     <Card className="p-6 md:p-8">
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">{t.age.title}</h2>
+      <h2 className="text-2xl font-bold text-gray-900 mb-6">{t.ageCalc.title}</h2>
 
       <div className="mb-8">
         <Input
-          label={t.age.birthDate}
+          label={t.ageCalc.birthDate}
           type="date"
           value={birthDate}
           max={today}
@@ -37,27 +37,27 @@ export default function AgeCalculator() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div className="bg-blue-50 rounded-xl p-4 text-center">
             <p className="text-3xl font-bold text-blue-600">{age.years}</p>
-            <p className="text-sm text-gray-500">{t.age.years}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.years}</p>
           </div>
           <div className="bg-green-50 rounded-xl p-4 text-center">
             <p className="text-3xl font-bold text-green-600">{age.months}</p>
-            <p className="text-sm text-gray-500">{t.age.months}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.months}</p>
           </div>
           <div className="bg-purple-50 rounded-xl p-4 text-center">
             <p className="text-3xl font-bold text-purple-600">{age.days}</p>
-            <p className="text-sm text-gray-500">{t.age.days}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.days}</p>
           </div>
           <div className="bg-orange-50 rounded-xl p-4 text-center">
             <p className="text-xl font-bold text-orange-600">{age.totalDays.toLocaleString()}</p>
-            <p className="text-sm text-gray-500">{t.age.totalDays}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.totalDays}</p>
           </div>
           <div className="bg-pink-50 rounded-xl p-4 text-center">
             <p className="text-xl font-bold text-pink-600">{age.daysUntilBirthday}</p>
-            <p className="text-sm text-gray-500">{t.age.daysUntil}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.daysUntil}</p>
           </div>
           <div className="bg-indigo-50 rounded-xl p-4 text-center">
             <p className="text-xl font-bold text-indigo-600">{age.zodiac} / {age.westernZodiac}</p>
-            <p className="text-sm text-gray-500">{t.age.zodiac}</p>
+            <p className="text-sm text-gray-500">{t.ageCalc.zodiac}</p>
           </div>
         </div>
       )}
