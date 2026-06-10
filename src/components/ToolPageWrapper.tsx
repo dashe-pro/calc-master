@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
-import PageLayout from '@/components/PageLayout'
+import Link from 'next/link'
 import FavoriteButton from '@/components/FavoriteButton'
 import { useRecentTools } from '@/hooks/useRecentTools'
 
@@ -20,12 +20,17 @@ export default function ToolPageWrapper({ children, title }: ToolPageWrapperProp
   }, [pathname, title, addRecentTool])
 
   return (
-    <PageLayout>
-      <div className="flex items-center justify-between mb-4">
-        <div />
-        <FavoriteButton toolHref={pathname} />
+    <div className="py-12 px-4">
+      <div className="max-w-3xl mx-auto">
+        <div className="flex items-center justify-between mb-6">
+          <Link href="/" className="inline-flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors">
+            <span>←</span>
+            <span>返回首页</span>
+          </Link>
+          <FavoriteButton toolHref={pathname} />
+        </div>
+        {children}
       </div>
-      {children}
-    </PageLayout>
+    </div>
   )
 }

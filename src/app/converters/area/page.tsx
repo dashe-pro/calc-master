@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import AreaConverter from '@/components/converters/AreaConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '面积换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function AreaConverterPage() {
-  return <AreaConverter />
+  return (
+    <ToolPageWrapper title="面积换算">
+      <AreaConverter />
+    </ToolPageWrapper>
+  )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import TextDiff from '@/components/dev-tools/TextDiff'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '文本对比 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function TextDiffPage() {
-  return <TextDiff />
+  return (
+    <ToolPageWrapper title="文本对比">
+      <TextDiff />
+    </ToolPageWrapper>
+  )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import Base64Encoder from '@/components/dev-tools/Base64Encoder'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: 'Base64编码/解码 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function Base64EncoderPage() {
-  return <Base64Encoder />
+  return (
+    <ToolPageWrapper title="Base64编解码">
+      <Base64Encoder />
+    </ToolPageWrapper>
+  )
 }

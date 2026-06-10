@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import PasswordGenerator from '@/components/dev-tools/PasswordGenerator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '密码生成器 - 在线随机密码生成 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function PasswordGeneratorPage() {
-  return <PasswordGenerator />
+  return (
+    <ToolPageWrapper title="密码生成器">
+      <PasswordGenerator />
+    </ToolPageWrapper>
+  )
 }

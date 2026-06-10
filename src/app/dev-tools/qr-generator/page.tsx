@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import QrGenerator from '@/components/dev-tools/QrGenerator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '二维码生成器 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function QrGeneratorPage() {
-  return <QrGenerator />
+  return (
+    <ToolPageWrapper title="二维码生成器">
+      <QrGenerator />
+    </ToolPageWrapper>
+  )
 }

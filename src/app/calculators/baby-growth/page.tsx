@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import BabyGrowthCalculator from '@/components/calculators/BabyGrowthCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '宝宝身高体重百分位 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function BabyGrowthCalculatorPage() {
-  return <BabyGrowthCalculator />
+  return (
+    <ToolPageWrapper title="宝宝生长百分位">
+      <BabyGrowthCalculator />
+    </ToolPageWrapper>
+  )
 }

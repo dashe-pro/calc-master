@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import CurrencyConverter from '@/components/converters/CurrencyConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '汇率换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function CurrencyConverterPage() {
-  return <CurrencyConverter />
+  return (
+    <ToolPageWrapper title="汇率换算">
+      <CurrencyConverter />
+    </ToolPageWrapper>
+  )
 }

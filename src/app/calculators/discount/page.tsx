@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import DiscountCalculator from '@/components/calculators/DiscountCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '折扣计算器 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function DiscountCalculatorPage() {
-  return <DiscountCalculator />
+  return (
+    <ToolPageWrapper title="折扣计算器">
+      <DiscountCalculator />
+    </ToolPageWrapper>
+  )
 }

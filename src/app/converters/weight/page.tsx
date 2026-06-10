@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import WeightConverter from '@/components/converters/WeightConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '重量换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function WeightConverterPage() {
-  return <WeightConverter />
+  return (
+    <ToolPageWrapper title="重量换算">
+      <WeightConverter />
+    </ToolPageWrapper>
+  )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import CompoundCalculator from '@/components/calculators/CompoundCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '复利计算器 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function CompoundCalculatorPage() {
-  return <CompoundCalculator />
+  return (
+    <ToolPageWrapper title="复利计算器">
+      <CompoundCalculator />
+    </ToolPageWrapper>
+  )
 }

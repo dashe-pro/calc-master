@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import TemperatureConverter from '@/components/converters/TemperatureConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '温度换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function TemperatureConverterPage() {
-  return <TemperatureConverter />
+  return (
+    <ToolPageWrapper title="温度换算">
+      <TemperatureConverter />
+    </ToolPageWrapper>
+  )
 }

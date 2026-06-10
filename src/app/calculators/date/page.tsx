@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import DateCalculator from '@/components/calculators/DateCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '日期计算器 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function DateCalculatorPage() {
-  return <DateCalculator />
+  return (
+    <ToolPageWrapper title="日期计算器">
+      <DateCalculator />
+    </ToolPageWrapper>
+  )
 }

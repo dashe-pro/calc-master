@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import CodeFormatter from '@/components/dev-tools/CodeFormatter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '代码格式化 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function CodeFormatterPage() {
-  return <CodeFormatter />
+  return (
+    <ToolPageWrapper title="代码格式化">
+      <CodeFormatter />
+    </ToolPageWrapper>
+  )
 }

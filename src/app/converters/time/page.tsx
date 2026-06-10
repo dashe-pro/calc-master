@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import TimeConverter from '@/components/converters/TimeConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '时间换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function TimeConverterPage() {
-  return <TimeConverter />
+  return (
+    <ToolPageWrapper title="时间换算">
+      <TimeConverter />
+    </ToolPageWrapper>
+  )
 }

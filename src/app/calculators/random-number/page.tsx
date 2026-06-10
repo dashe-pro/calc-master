@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import RandomNumberGenerator from '@/components/calculators/RandomNumberGenerator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '随机数生成器 - 在线随机数字生成 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function RandomNumberPage() {
-  return <RandomNumberGenerator />
+  return (
+    <ToolPageWrapper title="随机数生成器">
+      <RandomNumberGenerator />
+    </ToolPageWrapper>
+  )
 }

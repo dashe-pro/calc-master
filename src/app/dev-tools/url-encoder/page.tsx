@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import UrlEncoder from '@/components/dev-tools/UrlEncoder'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: 'URL编码/解码 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function UrlEncoderPage() {
-  return <UrlEncoder />
+  return (
+    <ToolPageWrapper title="URL编解码">
+      <UrlEncoder />
+    </ToolPageWrapper>
+  )
 }

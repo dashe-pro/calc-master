@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import TimestampConverter from '@/components/dev-tools/TimestampConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '时间戳转换 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function TimestampConverterPage() {
-  return <TimestampConverter />
+  return (
+    <ToolPageWrapper title="时间戳转换">
+      <TimestampConverter />
+    </ToolPageWrapper>
+  )
 }

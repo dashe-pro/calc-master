@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import DueDateCalculator from '@/components/calculators/DueDateCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '预产期计算器 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function DueDateCalculatorPage() {
-  return <DueDateCalculator />
+  return (
+    <ToolPageWrapper title="预产期计算器">
+      <DueDateCalculator />
+    </ToolPageWrapper>
+  )
 }

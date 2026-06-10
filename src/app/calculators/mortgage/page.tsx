@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import MortgageCalculator from '@/components/calculators/MortgageCalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '房贷计算器 - 等额本息/等额本金 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function MortgageCalculatorPage() {
-  return <MortgageCalculator />
+  return (
+    <ToolPageWrapper title="房贷计算器">
+      <MortgageCalculator />
+    </ToolPageWrapper>
+  )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import BMICalculator from '@/components/calculators/BMICalculator'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: 'BMI计算器 - 身体质量指数计算 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function BMICalculatorPage() {
-  return <BMICalculator />
+  return (
+    <ToolPageWrapper title="BMI计算器">
+      <BMICalculator />
+    </ToolPageWrapper>
+  )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import LengthConverter from '@/components/converters/LengthConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '长度单位换算器 - 米/英尺/厘米/英寸转换 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function LengthConverterPage() {
-  return <LengthConverter />
+  return (
+    <ToolPageWrapper title="长度换算">
+      <LengthConverter />
+    </ToolPageWrapper>
+  )
 }

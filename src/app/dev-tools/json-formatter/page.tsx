@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import JsonFormatter from '@/components/dev-tools/JsonFormatter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: 'JSON格式化/校验 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function JsonFormatterPage() {
-  return <JsonFormatter />
+  return (
+    <ToolPageWrapper title="JSON格式化">
+      <JsonFormatter />
+    </ToolPageWrapper>
+  )
 }

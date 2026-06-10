@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import RegexTester from '@/components/dev-tools/RegexTester'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '正则表达式测试 - CalcMaster',
@@ -8,5 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default function RegexTesterPage() {
-  return <RegexTester />
+  return (
+    <ToolPageWrapper title="正则表达式测试">
+      <RegexTester />
+    </ToolPageWrapper>
+  )
 }

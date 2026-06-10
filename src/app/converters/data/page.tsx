@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import DataConverter from '@/components/converters/DataConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '数据存储换算 - CalcMaster',
@@ -7,5 +8,9 @@ export const metadata: Metadata = {
 }
 
 export default function DataConverterPage() {
-  return <DataConverter />
+  return (
+    <ToolPageWrapper title="数据存储换算">
+      <DataConverter />
+    </ToolPageWrapper>
+  )
 }

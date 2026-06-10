@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import ColorConverter from '@/components/dev-tools/ColorConverter'
+import ToolPageWrapper from '@/components/ToolPageWrapper'
 
 export const metadata: Metadata = {
   title: '颜色转换器 - HEX/RGB/HSL 颜色转换 | CalcMaster',
@@ -14,5 +15,9 @@ export const metadata: Metadata = {
 }
 
 export default function ColorConverterPage() {
-  return <ColorConverter />
+  return (
+    <ToolPageWrapper title="颜色转换器">
+      <ColorConverter />
+    </ToolPageWrapper>
+  )
 }
