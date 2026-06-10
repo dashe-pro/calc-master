@@ -26,6 +26,7 @@ export default function HomeClient() {
     { title: t.calculators.date, href: '/calculators/date' },
     { title: t.calculators.dueDate, href: '/calculators/due-date' },
     { title: t.calculators.babyGrowth, href: '/calculators/baby-growth' },
+    { title: t.calculators.percentage, href: '/calculators/percentage' },
   ]
 
   const devTools: ToolItem[] = [

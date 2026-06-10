@@ -8,7 +8,8 @@ export const calculators = {
       compound: '复利计算器',
       date: '日期计算器',
       dueDate: '预产期计算器',
-      babyGrowth: '宝宝生长百分位'
+      babyGrowth: '宝宝生长百分位',
+      percentage: '百分比计算器',
     },
     calculatorPages: {
       mortgage: {
@@ -42,6 +43,10 @@ export const calculators = {
       babyGrowth: {
         title: '宝宝生长百分位 - CalcMaster',
         description: '免费的宝宝生长百分位计算器，评估宝宝的生长发育'
+      },
+      percentage: {
+        title: '百分比计算器 - CalcMaster',
+        description: '免费的在线百分比计算器，支持百分比计算、占比计算和百分比变化计算'
       }
     },
     bmi: {
@@ -122,6 +127,20 @@ export const calculators = {
       legendUnderOver: '偏矮/偏高 (3-97%)',
       legendExtreme: '偏矮小/超高 (<3% 或 >97%)'
     },
+    percentage: {
+      title: '百分比计算器',
+      modePercentOf: 'X 的 Y% 是多少',
+      modeWhatPercent: 'X 占 Y 的百分之几',
+      modeChange: '百分比变化',
+      value: '数值',
+      percent: '百分比',
+      total: '总数',
+      result: '结果',
+      from: '从',
+      to: '到',
+      increase: '增加',
+      decrease: '减少',
+    },
     mortgage: {
       title: '房贷计算器',
       loanAmount: '贷款金额（元）',
@@ -160,7 +179,8 @@ export const calculators = {
       compound: 'Compound Interest Calculator',
       date: 'Date Calculator',
       dueDate: 'Due Date Calculator',
-      babyGrowth: 'Baby Growth Percentile'
+      babyGrowth: 'Baby Growth Percentile',
+      percentage: 'Percentage Calculator',
     },
     calculatorPages: {
       mortgage: {
@@ -194,6 +214,10 @@ export const calculators = {
       babyGrowth: {
         title: 'Baby Growth Percentile - CalcMaster',
         description: 'Free baby growth percentile calculator to assess your baby\'s growth and development'
+      },
+      percentage: {
+        title: 'Percentage Calculator - CalcMaster',
+        description: 'Free online percentage calculator - calculate percentages, proportions and percentage changes'
       }
     },
     bmi: {
@@ -273,6 +297,20 @@ export const calculators = {
       legendLowNormal: 'Below/Above Average (10-90%)',
       legendUnderOver: 'Short/Tall (3-97%)',
       legendExtreme: 'Short Stature/Very Tall (<3% or >97%)'
+    },
+    percentage: {
+      title: 'Percentage Calculator',
+      modePercentOf: 'What is X% of Y',
+      modeWhatPercent: 'X is what % of Y',
+      modeChange: 'Percentage Change',
+      value: 'Value',
+      percent: 'Percent',
+      total: 'Total',
+      result: 'Result',
+      from: 'From',
+      to: 'To',
+      increase: 'Increase',
+      decrease: 'Decrease',
     },
     mortgage: {
       title: 'Mortgage Calculator',
