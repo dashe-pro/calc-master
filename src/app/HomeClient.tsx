@@ -28,6 +28,7 @@ export default function HomeClient() {
     { title: t.calculators.babyGrowth, href: '/calculators/baby-growth' },
     { title: t.calculators.percentage, href: '/calculators/percentage' },
     { title: t.calculators.age, href: '/calculators/age' },
+    { title: t.calculators.randomNumber, href: '/calculators/random-number' },
   ]
 
   const devTools: ToolItem[] = [

@@ -11,6 +11,7 @@ export const calculators = {
       babyGrowth: '宝宝生长百分位',
       percentage: '百分比计算器',
       age: '年龄计算器',
+      randomNumber: '随机数生成器',
     },
     calculatorPages: {
       mortgage: {
@@ -52,6 +53,10 @@ export const calculators = {
       age: {
         title: '年龄计算器 - CalcMaster',
         description: '免费的在线年龄计算器，输入出生日期精确计算年龄、生肖和星座'
+      },
+      randomNumber: {
+        title: '随机数生成器 - CalcMaster',
+        description: '免费的在线随机数生成器，支持范围设置和去重模式，可用于抽奖、抽签等场景'
       }
     },
     bmi: {
@@ -132,6 +137,17 @@ export const calculators = {
       legendUnderOver: '偏矮/偏高 (3-97%)',
       legendExtreme: '偏矮小/超高 (<3% 或 >97%)'
     },
+    randomNumber: {
+      title: '随机数生成器',
+      min: '最小值',
+      max: '最大值',
+      count: '生成数量',
+      unique: '去重（不重复）',
+      generate: '生成随机数',
+      result: '结果',
+      copy: '一键复制',
+      copied: '已复制',
+    },
     age: {
       title: '年龄计算器',
       birthDate: '出生日期',
@@ -199,6 +215,7 @@ export const calculators = {
       babyGrowth: 'Baby Growth Percentile',
       percentage: 'Percentage Calculator',
       age: 'Age Calculator',
+      randomNumber: 'Random Number Generator',
     },
     calculatorPages: {
       mortgage: {
@@ -240,6 +257,10 @@ export const calculators = {
       age: {
         title: 'Age Calculator - CalcMaster',
         description: 'Free online age calculator - calculate your exact age, zodiac sign and constellation'
+      },
+      randomNumber: {
+        title: 'Random Number Generator - CalcMaster',
+        description: 'Free online random number generator with range settings and unique mode for lucky draws'
       }
     },
     bmi: {
@@ -319,6 +340,17 @@ export const calculators = {
       legendLowNormal: 'Below/Above Average (10-90%)',
       legendUnderOver: 'Short/Tall (3-97%)',
       legendExtreme: 'Short Stature/Very Tall (<3% or >97%)'
+    },
+    randomNumber: {
+      title: 'Random Number Generator',
+      min: 'Min',
+      max: 'Max',
+      count: 'Count',
+      unique: 'Unique (no duplicates)',
+      generate: 'Generate',
+      result: 'Result',
+      copy: 'Copy All',
+      copied: 'Copied',
     },
     age: {
       title: 'Age Calculator',
