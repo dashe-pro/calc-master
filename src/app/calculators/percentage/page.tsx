@@ -1,6 +1,18 @@
 import { Metadata } from 'next'
 import PercentageCalculator from '@/components/calculators/PercentageCalculator'
 import ToolPageWrapper from '@/components/ToolPageWrapper'
+import JsonLd from '@/components/JsonLd'
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: '百分比计算器',
+  url: 'https://calcmasters.org/calculators/percentage',
+  description: '免费的在线百分比计算器，支持百分比计算、占比计算、百分比变化计算，输入即出结果',
+  applicationCategory: 'CalculatorApplication',
+  operatingSystem: 'All',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
+}
 
 export const metadata: Metadata = {
   title: '百分比计算器 - 在线百分比计算 | CalcMaster',
@@ -17,6 +29,7 @@ export const metadata: Metadata = {
 export default function PercentagePage() {
   return (
     <ToolPageWrapper title="百分比计算器">
+      <JsonLd data={jsonLd} />
       <PercentageCalculator />
     </ToolPageWrapper>
   )
