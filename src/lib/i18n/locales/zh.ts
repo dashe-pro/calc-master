@@ -65,7 +65,7 @@ export const zh: Translations = {
     legendNormal: '正常 (25-75%)', legendLowNormal: '中下/中上 (10-90%)', legendUnderOver: '偏矮/偏高 (3-97%)', legendExtreme: '偏矮小/超高 (<3% 或 >97%)',
   },
   percentage: { title: '百分比计算器', modePercentOf: 'X 的 Y% 是多少', modeWhatPercent: 'X 占 Y 的百分之几', modeChange: '百分比变化', value: '数值', percent: '百分比', total: '总数', result: '结果', from: '从', to: '到', increase: '增加', decrease: '减少' },
-  ageCalc: { title: '年龄计算器', birthDate: '出生日期', age: '年龄', years: '岁', months: '个月', days: '天', totalDays: '总天数', nextBirthday: '下一个生日', daysUntil: '还有', zodiac: '生肖/星座' },
+  ageCalc: { title: '年龄计算器', birthDate: '出生日期', age: '年龄', years: '岁', months: '个月', days: '天', totalDays: '总天数', nextBirthday: '下一个生日', daysUntil: '距生日', zodiac: '生肖/星座' },
   randomNumber: { title: '随机数生成器', min: '最小值', max: '最大值', count: '生成数量', unique: '去重（不重复）', generate: '生成随机数', result: '结果', copy: '一键复制', copied: '已复制' },
   mortgage: {
     title: '房贷计算器', loanAmount: '贷款金额（元）', interestRate: '年利率（%）', loanTerm: '贷款期限（年）',
