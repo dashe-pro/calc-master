@@ -74,8 +74,13 @@ export default function PasswordGenerator() {
           </div>
         </div>
 
-        {(['uppercase', 'lowercase', 'digits', 'symbols', 'excludeAmbiguous'] as (keyof PasswordOptions)[]).map((key) =>
-          key === 'length' ? null : (
+        {[
+          { key: 'uppercase' as keyof PasswordOptions, label: t.devToolUI.uppercase },
+          { key: 'lowercase' as keyof PasswordOptions, label: t.devToolUI.lowercase },
+          { key: 'digits' as keyof PasswordOptions, label: t.devToolUI.numbers },
+          { key: 'symbols' as keyof PasswordOptions, label: t.devToolUI.symbolsOption },
+          { key: 'excludeAmbiguous' as keyof PasswordOptions, label: t.devToolUI.excludeAmbiguous },
+        ].map(({ key, label }) =>
             <label key={key} className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
               <input
                 type="checkbox"
@@ -83,9 +88,8 @@ export default function PasswordGenerator() {
                 onChange={(e) => updateOption(key, e.target.checked)}
                 className="rounded"
               />
-              {(t.devToolUI as Record<string, string>)[key] || key}
+              {label}
             </label>
-          )
         )}
       </div>
 
