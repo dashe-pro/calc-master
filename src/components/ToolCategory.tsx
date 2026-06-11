@@ -4,6 +4,7 @@ import Card from '@/components/Card'
 export interface ToolItem {
   title: string
   href: string
+  icon?: string
 }
 
 interface ToolCategoryProps {
@@ -37,7 +38,7 @@ export default function ToolCategory({ icon, title, items, colorClass, columns =
           <Link key={item.href} href={item.href} className="flex">
             <Card className="p-4 hover:shadow-md transition-shadow cursor-pointer text-center flex flex-col items-center justify-center w-full min-h-[5rem]">
               <div className={`w-10 h-10 rounded-full ${colors.bg} flex items-center justify-center mb-3 mx-auto shrink-0`}>
-                <span className={`${colors.text} text-lg`}>🔄</span>
+                <span className="text-lg">{item.icon || '🔧'}</span>
               </div>
               <h3 className="font-semibold text-gray-800 text-sm leading-tight">{item.title}</h3>
             </Card>
