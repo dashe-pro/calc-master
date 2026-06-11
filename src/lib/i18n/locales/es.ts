@@ -3,7 +3,7 @@ import type { Translations } from './en'
 export const es: Translations = {
   header: { title: 'CalcMaster' },
   footer: { copyright: '© 2026 CalcMaster. Todos los derechos reservados.', description: 'Herramientas de cálculo online gratuitas', privacy: 'Política de Privacidad' },
-  common: { language: 'Idioma', searchPlaceholder: 'Buscar herramientas... (Ctrl+K)', noResults: 'No se encontraron herramientas' },
+  common: { language: 'Idioma', searchPlaceholder: 'Buscar herramientas... (Ctrl+K)', noResults: 'No se encontraron herramientas', backHome: '← Volver al Inicio' },
   home: { title: 'Calculadora Online Todo en Uno', subtitle: 'Herramientas de cálculo online gratuitas: conversión de unidades, cálculo financiero, salud, herramientas para desarrolladores y más', unitConverters: 'Conversores de Unidades', onlineCalculators: 'Calculadoras Online', devTools: 'Herramientas Dev', searchPlaceholder: 'Buscar herramientas... (Ctrl+K)', noResults: 'No se encontraron herramientas', recentTools: 'Usadas Recientemente', myFavorites: 'Mis Favoritos' },
   privacy: {
     title: 'Política de Privacidad', lastUpdated: 'Última Actualización',

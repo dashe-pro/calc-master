@@ -9,6 +9,7 @@ export const en = {
     language: 'Language',
     searchPlaceholder: 'Search tools... (Ctrl+K)',
     noResults: 'No matching tools found',
+    backHome: '← Back to Home',
   },
   home: {
     title: 'All-in-One Online Calculator',

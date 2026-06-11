@@ -1,6 +1,5 @@
 'use client'
 
-import { useMemo } from 'react'
 import Link from 'next/link'
 import { useI18n } from '@/lib/i18n/context'
 import ToolCategory from '@/components/ToolCategory'
@@ -51,15 +50,12 @@ export default function HomeClient() {
     { title: t.devTools.colorConverter, href: '/dev-tools/color-converter' },
   ]
 
-  const allTools = useMemo(() => [...converters, ...calculators, ...devTools], [])
+  const allTools = [...converters, ...calculators, ...devTools]
 
-  const toolMap = useMemo(() => {
-    const map = new Map<string, string>()
-    for (const tool of allTools) {
-      map.set(tool.href, tool.title)
-    }
-    return map
-  }, [allTools])
+  const toolMap = new Map<string, string>()
+  for (const tool of allTools) {
+    toolMap.set(tool.href, tool.title)
+  }
 
   const favTools: ToolItem[] = favorites
     .filter((href) => toolMap.has(href))

@@ -9,7 +9,7 @@ type DeepPartial<T> = T extends object ? { [K in keyof T]?: DeepPartial<T[K]> } 
 const esDelta: DeepPartial<Translations> = {
   header: { title: 'CalcMaster' },
   footer: { copyright: '© 2026 CalcMaster. Todos los derechos reservados.', description: 'Herramientas de cálculo online gratuitas', privacy: 'Política de Privacidad' },
-  common: { language: 'Idioma', searchPlaceholder: 'Buscar... (Ctrl+K)', noResults: 'Sin resultados' },
+  common: { language: 'Idioma', searchPlaceholder: 'Buscar... (Ctrl+K)', noResults: 'Sin resultados', backHome: '← Volver al Inicio' },
   home: { title: 'Calculadora Online', subtitle: 'Herramientas de cálculo gratuitas: conversión, finanzas, salud y más', unitConverters: 'Conversores', onlineCalculators: 'Calculadoras', devTools: 'Herramientas Dev', searchPlaceholder: 'Buscar... (Ctrl+K)', noResults: 'Sin resultados', recentTools: 'Recientes', myFavorites: 'Favoritos' },
   converters: { length: 'Conversor de Longitud', weight: 'Conversor de Peso', temperature: 'Conversor de Temperatura', area: 'Conversor de Área', data: 'Conversor de Datos', currency: 'Conversor de Moneda', time: 'Conversor de Tiempo' },
   calculators: { mortgage: 'Calculadora Hipotecaria', bmi: 'Calculadora de IMC', discount: 'Calculadora de Descuentos', tip: 'Calculadora de Propinas', compound: 'Interés Compuesto', date: 'Calculadora de Fechas', dueDate: 'Fecha de Parto', babyGrowth: 'Crecimiento Infantil', percentage: 'Calculadora de Porcentajes', age: 'Calculadora de Edad', randomNumber: 'Generador Aleatorio' },
