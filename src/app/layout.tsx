@@ -57,6 +57,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'ca-pub-3329053918048012',
+    baidu: 'codeva-10VRJQqEji',
   },
   other: {
     'google-adsense-account': 'ca-pub-3329053918048012',
